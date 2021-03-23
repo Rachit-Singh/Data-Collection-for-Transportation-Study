@@ -7,9 +7,9 @@
         <title>Transportation study</title>
     </head>
     <body onload="printingJob()">
-        <center><h3>CHARGING STATION LOCATION OPTIMIZATION</h3></center>
+        <center><h3 class="sizing">CHARGING STATION LOCATION OPTIMIZATION</h3></center>
         <hr>
-        <ul>
+        <ul class="sizing">
             <li>You are going to work in your very own Tesla :)</li>
             <li>You have <span class="battery">20</span>% battery remaining and you think now is the time to get your battery charged.</li>
             <li>Your current position is <span id="position">12445</span>.
@@ -19,9 +19,9 @@
             </li>
             <li>There are in total 10 charging stations you can visit. Distances from all the Charging stations is given in the table below.</li>
         </ul>
-        <p><b>1. Which charging station will you choose?</b> </p>
+        <p class="sizing"><b>1. Which charging station will you choose?</b> </p>
         <center>
-            <table id="beautifulTable">
+            <table id="beautifulTable" class="sizing">
                 <tr>
                     <th>Stations</th>
                     <th>Distance between you and Station (in km)</th>
@@ -42,9 +42,9 @@
             </table>
         </center>
 
-        <p><b>2. Also which charging pod will you use? Fast charging pod or the slow one. </b></p>
+        <p class="sizing"><b>2. Also which charging pod will you use? Fast charging pod or the slow one. </b></p>
         <center>
-            <table id="beautifulTable">
+            <table id="beautifulTable" class="sizing">
                 <tr>
                     <th>Pod</th>
                     <th>Charging rate (<span class="battery">20</span>% to full)</th>
@@ -58,7 +58,7 @@
         </center>
         <br>
         <form accept-charset="UTF-8" action="https://www.formbackend.com/f/e7e2d5f202e6068e" method="POST">
-            <fieldset>
+            <fieldset class="sizing">
                 <legend><b>Your Choice</b></legend>
                 <label for="stations">Charging Station : </label>
                 <select name="station" id="stations">
