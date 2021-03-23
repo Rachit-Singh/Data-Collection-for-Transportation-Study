@@ -1,7 +1,3 @@
-.sizing {
-    font-size : 1vw;
-}
-
 .leftAlign {
     float: left;
 }
@@ -72,9 +68,7 @@ input {
 
 .easter-egg {
     position: relative;
-    font-size: 70%;
     display: inline-block;
-    border-bottom: 1px dotted black;
 }
   
 .easter-egg .tooltiptext {
@@ -95,9 +89,13 @@ input {
     visibility: visible;
 }
 
+.sizing {
+    font-size : 1vw;
+}
+
 @media screen and (max-width: 800px) {
     .sizing {
-        font-size : 3vw;
+        font-size : 2vw;
     }
 
     #beautifulTable {
