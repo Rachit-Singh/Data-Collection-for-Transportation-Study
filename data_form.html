@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="form_css.css">
+        <script src="data_js.js"></script>
+        <title>Form for Transportation study</title>
+    </head>
+    <body onload="printingJob()">
+        <center><h3>CHARGING STATION LOCATION OPTIMIZATION</h3></center>
+        <hr>
+        <ul>
+            <li>You are going to work in your very own Tesla :)</li>
+            <li>You have <span class="battery">20</span>% battery remaining and you think now is the time to get your battery charged.</li>
+            <li>Your current position is <span id="position">12445</span>.
+                <span class="easter-egg">&nbsp;Ixfn edfnhqg, Ixfn MdydVfulsw, rqob Sbwkrq
+                    <span class="tooltiptext">Caesar &#128516</span>
+                </span>
+            </li>
+            <li>There are in total 10 charging stations you can visit. Distances from all the Charging stations is given in the table below.</li>
+        </ul>
+        <p><b>1. Which charging station will you choose?</b> </p>
+        <center>
+            <table id="beautifulTable">
+                <tr>
+                    <th>Stations</th>
+                    <th>Distance between you and Station (in km)</th>
+                    <th>Distance between Station and Workplace (in km)</th>
+                </tr>
+
+                <tr><td>A</td><td id="0ds">5.3</td><td id="0sw">9.3</td></tr>
+                <tr><td>B</td><td id="1ds">5.3</td><td id="1sw">9.3</td></tr>
+                <tr><td>C</td><td id="2ds">5.3</td><td id="2sw">9.3</td></tr>
+                <tr><td>D</td><td id="3ds">5.3</td><td id="3sw">9.3</td></tr>
+                <tr><td>E</td><td id="4ds">5.3</td><td id="4sw">9.3</td></tr>
+                <tr><td>F</td><td id="5ds">5.3</td><td id="5sw">9.3</td></tr>
+                <tr><td>G</td><td id="6ds">5.3</td><td id="6sw">9.3</td></tr>
+                <tr><td>H</td><td id="7ds">5.3</td><td id="7sw">9.3</td></tr>
+                <tr><td>I</td><td id="8ds">5.3</td><td id="8sw">9.3</td></tr>
+                <tr><td>J</td><td id="9ds">5.3</td><td id="9sw">9.3</td></tr>
+
+            </table>
+        </center>
+
+        <p><b>2. Also which charging pod will you use? Fast charging pod or the slow one. </b></p>
+        <center>
+            <table id="beautifulTable">
+                <tr>
+                    <th>Pod</th>
+                    <th>Charging rate (<span class="battery">20</span>% to full)</th>
+                    <th>Cost (Rs / % charge)</th>
+                    <th>Total cost (for <span class="battery">20</span>% to full) (Rs.)</th>
+                </tr>
+
+                <tr><td>Fast</td><td><span id="fast_time">20</span> min</td><td>5</td><td id="fast_cost">400</td></tr>
+                <tr><td>Slow</td><td><span id="slow_time">120</span> min</td><td>2</td><td id="slow_cost">160</td></tr>
+            </table> 
+        </center>
+        <br>
+        <form accept-charset="UTF-8" action="https://www.formbackend.com/f/e7e2d5f202e6068e" method="POST">
+            <fieldset>
+                <legend><b>Your Choice</b></legend>
+                <label for="stations">Charging Station : </label>
+                <select name="station" id="stations">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="G">G</option>
+                    <option value="H">H</option>
+                    <option value="I">I</option>
+                    <option value="J">J</option>
+                </select>
+                <br><br>
+                <label for="pods">Pod : </label>
+                <select name="pod" id="pods">
+                    <option value="Fast">Fast</option>
+                    <option value="Slow">Slow</option>
+                </select>
+                <br><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+        
+    </body>

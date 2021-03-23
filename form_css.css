@@ -1,0 +1,105 @@
+body {
+    font-size : 1vw;
+}
+
+.leftAlign {
+    float: left;
+}
+
+.rightAlign {
+    float : right;
+}
+
+#beautifulTable {
+    font-size: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+}
+  
+#beautifulTable td, #beautifulTable th {
+border: 1px solid #ddd;
+padding: 8px;
+text-align: center;
+}
+
+#beautifulTable tr:nth-child(even){background-color: #f2f2f2;}
+
+#beautifulTable tr:hover {background-color: #ddd;}
+
+#beautifulTable th {
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: left;
+background-color: #4CAF50;
+color: white;
+text-align: center;
+}
+
+ul {
+    border-left: 5px solid #4CAF50;
+    background-color: #f1f1f1;
+    list-style-type: none;
+    padding: 10px 20px;
+}
+
+fieldset {
+    background-color: #f1f1f1;
+    padding: auto;
+}
+
+select {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+button, label, input, select, progress, meter {
+    display: block;
+    font-family: inherit;
+    font-size: 1vw;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 60%;
+    padding: 5px;
+    height: 30px;
+}
+
+input {
+    background-color: #83af85;
+    border: 2px solid green;
+}
+
+@media screen and (max-width: 800px) {
+    #beautifulTable {
+        width: 100%;
+    }
+    button, label, input, select, progress, meter {
+        width: 100%;
+    }
+}
+
+.easter-egg {
+    position: relative;
+    font-size: 70%;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+  
+.easter-egg .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.easter-egg:hover .tooltiptext {
+    visibility: visible;
+}
