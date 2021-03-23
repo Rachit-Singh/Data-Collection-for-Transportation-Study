@@ -1,4 +1,4 @@
-body {
+.sizing {
     font-size : 1vw;
 }
 
@@ -96,8 +96,8 @@ input {
 }
 
 @media screen and (max-width: 800px) {
-    body {
-        font-size : 20px;
+    .sizing {
+        font-size : 3vw;
     }
 
     #beautifulTable {
