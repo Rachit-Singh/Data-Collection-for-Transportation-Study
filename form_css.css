@@ -103,6 +103,7 @@ input {
     }
 
     #beautifulTable td, #beautifulTable th {
+        font-size : 2vw;
         border: 1px solid #ddd;
         padding: 4px;
         text-align: center;
