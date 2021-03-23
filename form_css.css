@@ -71,6 +71,9 @@ input {
 }
 
 @media screen and (max-width: 800px) {
+    body {
+        font-size : 5vw;
+    }
     #beautifulTable {
         width: 100%;
     }
